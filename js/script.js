@@ -113,3 +113,89 @@
             
          
         });
+         document.addEventListener("DOMContentLoaded", () => {
+      const items = document.querySelectorAll(".menu li");
+      let timer;
+
+      items.forEach(item => {
+        item.addEventListener("mouseenter", () => {
+          clearTimeout(timer);
+          const siblings = item.parentElement.querySelectorAll(":scope > li");
+          siblings.forEach(sib => {
+            if (sib !== item) sib.classList.remove("active");
+          });
+          item.classList.add("active");
+        });
+
+        item.addEventListener("mouseleave", () => {
+          timer = setTimeout(() => {
+            item.classList.remove("active");
+          }, 250);
+        });
+      });
+
+      // برای موبایل - کلیک کردن
+      if (window.innerWidth <= 768) {
+        items.forEach(item => {
+          const link = item.querySelector("a");
+          if (item.querySelector(".submenu")) {
+            link.addEventListener("click", (e) => {
+              e.preventDefault();
+              item.classList.toggle("active");
+            });
+          }
+        });
+      }
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+    const searchIcon = document.querySelector('.search');
+    const searchBox = document.querySelector('.search-box-wrapper');
+    const closeSearchBtn = document.getElementById('closeSearch');
+    const searchInput = document.getElementById('searchInput');
+    
+   
+    if (searchIcon) {
+        searchIcon.addEventListener('click', function(e) {
+            e.preventDefault();
+            searchBox.classList.add('active');
+            
+           
+            setTimeout(() => {
+                searchInput.focus();
+            }, 400);
+        });
+    }
+    
+   
+    if (closeSearchBtn) {
+        closeSearchBtn.addEventListener('click', function() {
+            searchBox.classList.remove('active');
+        });
+    }
+    
+   
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && searchBox.classList.contains('active')) {
+            searchBox.classList.remove('active');
+        }
+    });
+    
+    
+    document.addEventListener('click', function(e) {
+        if (!searchBox.contains(e.target) && !searchIcon.contains(e.target)) {
+            searchBox.classList.remove('active');
+        }
+    });
+    
+    
+    searchBox.addEventListener('click', function(e) {
+        e.stopPropagation();
+    });
+    });
+      function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
