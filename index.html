@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+     <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>delvan baspar raya</title>
+</head>
+<body>
+    <header class=" header-container main-header mt-3">
+
+        <div class="container-fluid  py-2">
+            <div class="row col-xl-11">
+                <div class="col-lg-10 col-9 d-flex align-items-center">
+                    <div class="menu-container">
+                       <div class=" bar-menu justify-content-center align-items-center d-lg-none">
+                <i class="fa-solid fa-bars" ></i>
+                       </div>
+    <ul class="menu">
+      <li>
+        <a href="#">صفحه اصلی</a>
+      </li>
+       <li>
+        <a href="#">درباره ما</a>
+      </li>
+
+      <li>
+        <a href="#">محصولات <i class="arrow down"></i></a>
+        <ul class="submenu">
+          <li>
+            <a href="#">دسته ۱</a>
+          </li>
+          <li>
+            <a href="#">دسته ۲ <i class="arrow left"></i></a>
+            <ul class="submenu">
+              <li><a href="#">زیر دسته ۲-۱</a></li>
+              <li>
+                <a href="#">زیر دسته ۲-۲ <i class="arrow left"></i></a>
+                <ul class="submenu">
+                  <li><a href="#">سطح سوم ۱</a></li>
+                  <li><a href="#">سطح سوم ۲</a></li>
+                  <li><a href="#">سطح سوم ۳</a></li>
+                </ul>
+              </li>
+              <li><a href="#">زیر دسته ۲-۳</a></li>
+            </ul>
+          </li>
+          <li><a href="#">دسته ۳</a></li>
+          <li><a href="#">دسته ۴</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#">خدمات<i class="arrow down"></i></a>
+        <ul class="submenu">
+          <li><a href="#">تاریخچه</a></li>
+          <li><a href="#">تیم ما</a></li>
+          <li>
+            <a href="#">خدمات <i class="arrow left"></i></a>
+            <ul class="submenu">
+              <li><a href="#">مشاوره</a></li>
+              <li><a href="#">پشتیبانی</a></li>
+              <li><a href="#">آموزش</a></li>
+              <li><a href="#">توسعه</a></li>
+            </ul>
+          </li>
+          <li><a href="#">جوایز و افتخارات</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#"> مقالات</a>
+      </li>
+
+      <li>
+        <a href="#">تماس با ما</a>
+      </li>
+      <li>
+        <img src="images/search.png" alt="" class="search">
+      </li>
+    </ul>
+     <div class="search-box-wrapper">
+                        <div class="search-box-container">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="search-box-content">
+                                            <button class="search-close-btn" id="closeSearch">
+                                                <i class="fa fa-times"></i>
+                                            </button>
+                                            
+                                            <form class="search-form" action="" method="GET">
+                                                <div class="search-input-wrapper">
+                                                    <input 
+                                                        type="text" 
+                                                        class="search-input" 
+                                                        placeholder="دنبال چه محصولی می‌گردید؟"
+                                                        name="search"
+                                                        id="searchInput"
+                                                    >
+                                                    <button type="submit" class="search-submit-btn">
+                                                        <i class="fa fa-search"></i>
+                                                        جستجو
+                                                    </button>
+                                                </div>
+                                            </form>
+                                            
+                                         
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+  </div>
+                </div>
+                <div class="col-lg-2 col-3 d-flex justify-content-end">
+                  <a href="" class="logo">
+                      <img src="images/logo.png" alt="" class="">
+                  </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+         <div class="mobile-offcanvas-overlay"></div>
+
+        <!-- mobile-nav -->
+<div class="off-canvas">
+  <div class="off-canvas-header d-flex justify-content-between">
+    <span>منوی دسترسی</span>
+    <div class="close-btn">
+      <i class="fa-solid fa-xmark"></i>
+    </div>
+  </div>
+  
+  <div class="off-canvas-nav">
+    
+    <div class="off-canvas-item">
+      <a href="#">صفحه اصلی</a>
+    </div>
+    
+ 
+    <div class="off-canvas-item has-submenu">
+      <a href="#" class="menu-trigger">
+        <span>محصولات</span>
+        <i class="fa-solid fa-chevron-left"></i>
+      </a>
+      <div class="off-canvas-submenu" data-level="1">
+        <div class="submenu-header">
+          <button class="back-btn">
+            <i class="fa-solid fa-chevron-right"></i>
+            <span>بازگشت</span>
+          </button>
+          <span class="submenu-title">محصولات</span>
+        </div>
+        <div class="submenu-items">
+          
+        
+          <div class="submenu-item has-submenu">
+            <a href="#" class="menu-trigger">
+              <span>دسته اول</span>
+              <i class="fa-solid fa-chevron-left"></i>
+            </a>
+            <div class="off-canvas-submenu" data-level="2">
+              <div class="submenu-header">
+                <button class="back-btn">
+                  <i class="fa-solid fa-chevron-right"></i>
+                  <span>بازگشت</span>
+                </button>
+                <span class="submenu-title">دسته اول</span>
+              </div>
+              <div class="submenu-items">
+                
+                
+                <div class="submenu-item has-submenu">
+                  <a href="#" class="menu-trigger">
+                    <span>زیردسته 1-1</span>
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </a>
+                  <div class="off-canvas-submenu" data-level="3">
+                    <div class="submenu-header">
+                      <button class="back-btn">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <span>بازگشت</span>
+                      </button>
+                      <span class="submenu-title">زیردسته 1-1</span>
+                    </div>
+                    <div class="submenu-items">
+                      
+                     
+                      <div class="submenu-item has-submenu">
+                        <a href="#" class="menu-trigger">
+                          <span>محصول 1-1-1</span>
+                          <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+                        <div class="off-canvas-submenu" data-level="4">
+                          <div class="submenu-header">
+                            <button class="back-btn">
+                              <i class="fa-solid fa-chevron-right"></i>
+                              <span>بازگشت</span>
+                            </button>
+                            <span class="submenu-title">محصول 1-1-1</span>
+                          </div>
+                          <div class="submenu-items">
+                            
+                           
+                            <div class="submenu-item has-submenu">
+                              <a href="#" class="menu-trigger">
+                                <span>مدل A</span>
+                                <i class="fa-solid fa-chevron-left"></i>
+                              </a>
+                              <div class="off-canvas-submenu" data-level="5">
+                                <div class="submenu-header">
+                                  <button class="back-btn">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <span>بازگشت</span>
+                                  </button>
+                                  <span class="submenu-title">مدل A</span>
+                                </div>
+                                <div class="submenu-items">
+                                  <div class="submenu-item">
+                                    <a href="#">نسخه 1</a>
+                                  </div>
+                                  <div class="submenu-item">
+                                    <a href="#">نسخه 2</a>
+                                  </div>
+                                  <div class="submenu-item">
+                                    <a href="#">نسخه 3</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div class="submenu-item">
+                              <a href="#">مدل B</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="submenu-item">
+                        <a href="#">محصول 1-1-2</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="submenu-item">
+                  <a href="#">زیردسته 1-2</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        
+          <div class="submenu-item has-submenu">
+            <a href="#" class="menu-trigger">
+              <span>دسته دوم</span>
+              <i class="fa-solid fa-chevron-left"></i>
+            </a>
+            <div class="off-canvas-submenu" data-level="2">
+              <div class="submenu-header">
+                <button class="back-btn">
+                  <i class="fa-solid fa-chevron-right"></i>
+                  <span>بازگشت</span>
+                </button>
+                <span class="submenu-title">دسته دوم</span>
+              </div>
+              <div class="submenu-items">
+                <div class="submenu-item">
+                  <a href="#">زیردسته 2-1</a>
+                </div>
+                <div class="submenu-item">
+                  <a href="#">زیردسته 2-2</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="submenu-item">
+            <a href="#">دسته سوم</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  
+    <div class="off-canvas-item has-submenu">
+      <a href="#" class="menu-trigger">
+        <span>درباره ما</span>
+        <i class="fa-solid fa-chevron-left"></i>
+      </a>
+      <div class="off-canvas-submenu" data-level="1">
+        <div class="submenu-header">
+          <button class="back-btn">
+            <i class="fa-solid fa-chevron-right"></i>
+            <span>بازگشت</span>
+          </button>
+          <span class="submenu-title">درباره ما</span>
+        </div>
+        <div class="submenu-items">
+          <div class="submenu-item">
+            <a href="#">تاریخچه</a>
+          </div>
+          <div class="submenu-item">
+            <a href="#">اهداف و چشم‌انداز</a>
+          </div>
+          <div class="submenu-item">
+            <a href="#">تیم مدیریت</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+   
+    <div class="off-canvas-item">
+      <a href="#">اخبار و رویدادها</a>
+    </div>
+    
+    <div class="off-canvas-item">
+      <a href="#">تماس با ما</a>
+    </div>
+  </div>
+</div>
+    </header>
+    <main>
+        <div class="baner-sec">
+            <div class="owl-carousel owl-theme baner-owl">
+                <div class="baner-item">
+                    <a href="">
+                        <img src="images/baner.png" alt="">
+                    <div class="baner-txt">
+                        <p>تولید گرانول های رنگی</p>
+                        <p>COLOR MASTERBATCH POLYMER</p>
+                    </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+            <section class="services position-relative pt-lg-2">
+      
+        <div class="container-fluid p-0">
+          <div class="row col-xl-11 py-lg-3">
+            <div
+              class="owl-carousel owl-theme owl-support d-flex align-items-center py-lg-5 py-4"
+            >
+              <div class="service-item">
+                <img
+                  src="images/engine.png"
+                  alt=""
+                  class="service-img"
+                />
+                <span class="py-lg-4 py-3">طراحی و مهندسی</span>
+              </div>
+              <div class="service-item">
+                <img
+                  src="images/tamin.png"
+                  alt=""
+                  class="service-img"
+                />
+                <span class="py-lg-4 py-3"> تامین و تدارکات </span>
+              </div>
+              <div class="service-item">
+                <img
+                  src="images/build.png"
+                  alt=""
+                  class="service-img"
+                />
+                <span class="py-lg-4 py-3">ساخت </span>
+              </div>
+              <div class="service-item">
+                <img
+                  src="images/factor.png"
+                  alt=""
+                  class="service-img"
+                />
+                <span class="py-lg-4 py-3">صدور فاکتور رسمی </span>
+              </div>
+              <div class="service-item">
+                <img
+                  src="images/represent.png"
+                  alt=""
+                  class="service-img"
+                />
+                <span class="py-lg-4 py-3">اخذ نمایندگی </span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      
+      </section>
+      <div class="container-fluid about-sec">
+        <div class="row col-xl-11">
+            <div class="col-lg-6">
+                <span>درباره ما</span>
+                <h6 class="mb-5">دلوان</h6>
+                <p class="">
+                    شرکت دلوان بسپار راپا با بهره‌گیری از دانش و تخصص فارغ‌التحصیلان برجسته دانشگاه‌های برتر ایران و تجربه متخصصین داخلی، در سال ۱۴۰۳ تأسیس شد. این شرکت به‌عنوان یکی از پیشگامان تولید ترکیبات پلیمری پیشرفته و مهندسی‌شده، محصولات با کیفیت بالا و یکنواخت برای صنایع مختلف ارائه می‌دهد و از مواد اولیه مرغوب تأمین‌شده توسط پتروشیمی‌های معتبر و تجهیزات پیشرفته استفاده می‌کند.
+
+ماموریت اصلی دلوان بسپار راپا، بومی‌سازی تولید مواد اولیه پلیمری برای فرآیندهای تزریق پلاستیک و اکستروژن است که نیازهای صنایع کلیدی مانند خودروسازی، لوازم خانگی، لوله و اتصالات و فیلم‌های کشاورزی را برآورده می‌کند. این شرکت با بهره‌مندی از آزمایشگاه‌های پیشرفته کنترل کیفیت و واحد تحقیق و توسعه پویا، ترکیبات سفارشی و مقرون‌به‌صرفه‌ای تولید می‌کند که با استانداردهای جهانی همخوانی دارد.
+
+دلوان بسپار راپا با تعهد به نوآوری، پایداری زیست‌محیطی و رضایت مشتری، در تلاش است تا جایگاه صنعت پلیمر ایران را در بازارهای داخلی و بین‌المللی ارتقا دهد. این شرکت با تمرکز بر کیفیت، نوآوری و خودکفایی صنعتی، شریکی قابل اعتماد برای پاسخگویی به نیازهای صنایع مدرن است.
+                </p>
+            </div>
+            <div class="col-lg-6 position-relative">
+                <img src="images/about1.png" alt="" class="about-top">
+                <img src="images/about2.png" alt="" class="about-down">
+
+            </div>
+        </div>
+
+      </div>
+      <div class="chemi-sec container-fluid my-5">
+        <div class="row col-xl-11">
+            <div class="col-12">
+                <p>تولید ترکیبات پلیمری</p>
+                <span>
+قطعاتی مطابق با استانداردهای بین المللی و با کیفیت مطلوب 
+</span>
+            </div>
+        </div>
+        <div class="row chemi-shapes">
+           <div class="col-12  mt-5 chemi-shape">
+             <div class="col-6 chemi-shape mx-auto">
+                <img src="images/chemi-shape.png" alt="" class="w-auto mx-auto ">
+             <div class="shape-one d-flex">
+                <div class="shap-img">
+                    <img src="images/chem1.png" alt="">
+                </div>
+                <div class="shap-txt">
+                    <h6>Delva Pylene</h6>
+                <p>Poly propylene based compound</p>
+                <a href="">مشاهده محصول
+                    <img src="images/left-flesh.png" alt="">
+                </a>
+                </div>
+                
+             </div>
+             </div>
+           </div>
+
+
+        </div>
+      </div>
+      <div class="img-grid-sec container-fluid">
+
+      </div>
+      <div class="customer-sec container-fluid">
+
+      </div>
+      <div class="blog-sec container-fluid">
+        <div class="row col-xl-10">
+            <div class="col-12"></div>
+            <div class="col-12">
+                <div class="owl-carousel owl-theme blog-owl">
+                  <div class="blog-item p-3">
+                   <div class="blog-card">
+                    <a href="">
+                         <div class="blog-img">
+                        <img src="images/blog1.png" alt="">
+                        <img src="images/blog-mask.png" alt="" class="blog-mask">
+                    </div>
+                    <div class="blog-text position-relative">
+                        <span class="blog-date">
+                            30 بهمن 1404
+                        </span>
+                        <h1>
+                            لورم ایپسوم متن ساختگی با تولید سادگی متن
+                        </h1>
+                        <p>
+                             از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و زیادی در شصت و 3 درصد
+                        </p>
+                    </div>
+                    </a>
+                   </div>
+                  </div>
+                     <div class="blog-item p-3">
+                   <div class="blog-card">
+                    <a href="">
+                         <div class="blog-img">
+                        <img src="images/blog2.png" alt="">
+                        <img src="images/blog-mask.png" alt="" class="blog-mask">
+                    </div>
+                    <div class="blog-text position-relative">
+                        <span class="blog-date">
+                            30 بهمن 1404
+                        </span>
+                        <h1>
+                            لورم ایپسوم متن ساختگی با تولید سادگی متن
+                        </h1>
+                        <p>
+                             از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و زیادی در شصت و 3 درصد
+                        </p>
+                    </div>
+                    </a>
+                   </div>
+                  </div>
+                    <div class="blog-item p-3">
+                   <div class="blog-card">
+                    <a href="">
+                         <div class="blog-img">
+                        <img src="images/blog3.png" alt="">
+                        <img src="images/blog-mask.png" alt="" class="blog-mask">
+                    </div>
+                    <div class="blog-text position-relative">
+                        <span class="blog-date">
+                            30 بهمن 1404
+                        </span>
+                        <h1>
+                            لورم ایپسوم متن ساختگی با تولید سادگی متن
+                        </h1>
+                        <p>
+                             از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و زیادی در شصت و 3 درصد
+                        </p>
+                    </div>
+                    </a>
+                   </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        
+      </div>
+      <div class="catalog-sec container-fluid">
+       <div class="row col-xl-10 text-center">
+         <a href="">
+            <img src="images/catalog-sec.png" alt="" class="img-fluid">
+        </a>
+       </div>
+      </div>
+    </main>
+    <footer></footer>
+    
+
+
+
+
+
+     <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
