@@ -10,12 +10,7 @@
                 autoplayTimeout: 5000,
                 autoplayHoverPause: true,
                 smartSpeed: 1000,
-        //          animateOut: 'fadeOut',
-        // animateIn: 'fadeIn',
-         navText: [
-            '<img src="images/nav-left.png" >',
-             '<img src="images/nav-right.png" >'
-        ],
+       
                
                 responsive: {
                     0: {
@@ -24,7 +19,7 @@
                     },
                      1200: {
                         items: 1,
-                nav: true,
+                dots: true,
 
                         
                     },
@@ -81,7 +76,7 @@
                 loop: true,
                 
                 nav: false,
-                dots: false,
+                dots: true,
                 // center: true,
                 // autoplay: true,
                 // autoplayTimeout: 5000,
@@ -89,10 +84,7 @@
                 // smartSpeed: 1000,
         //          animateOut: 'fadeOut',
         // animateIn: 'fadeIn',
-         navText: [
-            '<img src="images/nav-left.png" >',
-             '<img src="images/nav-right.png" >'
-        ],
+        
                
                 responsive: {
                     0: {
@@ -101,7 +93,7 @@
                     },
                      1200: {
                         items: 3,
-                nav: true,
+                
 
                         
                     },
