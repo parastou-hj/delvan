@@ -212,3 +212,116 @@
             toggleScrolled();
             window.addEventListener('scroll', toggleScrolled);
         });
+        // ==================== Flower Bloom Animation ==================== 
+document.addEventListener('DOMContentLoaded', function() {
+    const aboutSection = document.querySelector('.about-sec');
+    const aboutTop = document.querySelector('.about-sec .about-top');
+    const aboutDown = document.querySelector('.about-sec .about-down');
+    
+    if (!aboutSection || !aboutDown) return;
+    
+    // تنظیمات Intersection Observer
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.3 
+    };
+    
+   
+    const observerCallback = (entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+               
+                if (aboutTop) {
+                    setTimeout(() => {
+                        aboutTop.classList.add('visible');
+                    }, 200);
+                }
+                
+              
+                setTimeout(() => {
+                    aboutDown.classList.add('bloomed');
+                }, 600);
+                
+                
+                observer.unobserve(entry.target);
+            }
+        });
+    };
+    
+    
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+    
+   
+    observer.observe(aboutSection);
+});
+// ==================== Chemi Shapes - Simple Version ==================== 
+document.addEventListener('DOMContentLoaded', function() {
+    const chemiSection = document.querySelector('.chemi-sec');
+    
+    if (!chemiSection) return;
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // اضافه کردن کلاس animate به تمام المان‌ها
+                chemiSection.querySelector('.title')?.classList.add('animate');
+                chemiSection.querySelector('.chemi-back')?.classList.add('animate');
+                
+                const shapes = chemiSection.querySelectorAll('[class*="shape-"]');
+                shapes.forEach(shape => shape.classList.add('animate'));
+                
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.2 });
+    
+    observer.observe(chemiSection);
+});
+// ==================== Language Switcher ==================== 
+document.addEventListener('DOMContentLoaded', function() {
+    const langSwitcher = document.querySelector('.lang-switcher');
+    const langTrigger = document.querySelector('.lang-trigger');
+    const langOptions = document.querySelectorAll('.lang-option');
+    const currentLangSpan = document.querySelector('.current-lang');
+    
+    if (!langSwitcher) return;
+    
+    // کلیک روی trigger
+    langTrigger?.addEventListener('click', function(e) {
+        e.preventDefault();
+        langSwitcher.classList.toggle('active');
+    });
+    
+    // انتخاب زبان
+    langOptions.forEach(option => {
+        option.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // حذف active از همه
+            langOptions.forEach(opt => opt.classList.remove('active'));
+            
+            // اضافه کردن active به گزینه انتخاب شده
+            this.classList.add('active');
+            
+            // تغییر متن نمایشی
+            const selectedLang = this.getAttribute('data-lang').toUpperCase();
+            if (currentLangSpan) {
+                currentLangSpan.textContent = selectedLang;
+            }
+            
+            // بستن dropdown
+            langSwitcher.classList.remove('active');
+            
+            // اینجا می‌توانید زبان سایت را تغییر دهید
+            // console.log('Selected language:', this.getAttribute('data-lang'));
+        });
+    });
+    
+    // بستن با کلیک بیرون
+    document.addEventListener('click', function(e) {
+        if (!langSwitcher.contains(e.target)) {
+            langSwitcher.classList.remove('active');
+        }
+    });
+});

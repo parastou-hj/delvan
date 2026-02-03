@@ -80,43 +80,69 @@
       <li>
         <a href="#">تماس با ما</a>
       </li>
+      
+<li class="lang-switcher">
+  <a href="#" class="lang-trigger">
+    <i class="fa-solid fa-chevron-down arrow-lang"></i>
+
+    <i class="fa-solid fa-globe"></i>
+    <span class="current-lang">FA</span>
+  </a>
+  <ul class="lang-dropdown">
+    <li><a href="#" data-lang="fa" class="lang-option active">فارسی</a></li>
+    <li><a href="#" data-lang="en" class="lang-option">English</a></li>
+    <li><a href="#" data-lang="ar" class="lang-option">العربية</a></li>
+  </ul>
+</li>
+
+
       <li>
         <img src="images/search.png" alt="" class="search">
       </li>
     </ul>
-     <div class="search-box-wrapper">
-                        <div class="search-box-container">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="search-box-content">
-                                            <button class="search-close-btn" id="closeSearch">
-                                                <i class="fa fa-times"></i>
-                                            </button>
-                                            
-                                            <form class="search-form" action="" method="GET">
-                                                <div class="search-input-wrapper">
-                                                    <input 
-                                                        type="text" 
-                                                        class="search-input" 
-                                                        placeholder="دنبال چه محصولی می‌گردید؟"
-                                                        name="search"
-                                                        id="searchInput"
-                                                    >
-                                                    <button type="submit" class="search-submit-btn">
-                                                        <i class="fa fa-search"></i>
-                                                        جستجو
-                                                    </button>
-                                                </div>
-                                            </form>
-                                            
-                                         
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+  <div class="search-box-wrapper">
+    <div class="search-box-container">
+        <div class="search-header">
+            <h3 class="search-title">
+                <i class="fa fa-search"></i>
+                جستجو در سایت
+            </h3>
+            <p class="search-subtitle">محصول، مقاله یا دسته‌بندی مورد نظر خود را جستجو کنید</p>
+        </div>
+        
+        <div class="search-box-content">
+            <button class="search-close-btn" id="closeSearch">
+                <i class="fa fa-times"></i>
+            </button>
+            
+            <form class="search-form" action="" method="GET">
+                <div class="search-input-wrapper">
+                    <label class="search-label">
+                        <i class="fa fa-pen"></i>
+                        عبارت جستجو
+                    </label>
+                    <input 
+                        type="text" 
+                        class="search-input" 
+                        placeholder="نام محصول یا کلمه کلیدی را وارد کنید..."
+                        name="search"
+                        id="searchInput"
+                        autocomplete="off"
+                    >
+                    <button type="submit" class="search-submit-btn">
+                        <i class="fa fa-search"></i>
+                        جستجو کنید
+                    </button>
+                </div>
+            </form>
+            
+           
+        </div>
+    </div>
+</div>
+
+<!-- Overlay -->
+<div class="search-overlay" id="searchOverlay"></div>
   </div>
                 </div>
                 <div class="col-lg-2 col-3 d-flex justify-content-end align-items-center">
