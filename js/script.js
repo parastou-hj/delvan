@@ -191,3 +191,24 @@
                 behavior: 'smooth'
             });
         }
+
+         document.addEventListener('DOMContentLoaded', () => {
+            const header = document.querySelector('header');
+            const logoFix = document.querySelector('.logo-img-fix');
+            const logo = document.querySelector('.logo');
+
+
+            if (!header || !logoFix) {
+                return;
+            }
+
+            const toggleScrolled = () => {
+                const isScrolled = window.scrollY > 0;
+                header.classList.toggle('scrolled', isScrolled);
+                logoFix.classList.toggle('scrolled', isScrolled);
+                logo.classList.toggle('scrolled', isScrolled);
+            };
+
+            toggleScrolled();
+            window.addEventListener('scroll', toggleScrolled);
+        });
